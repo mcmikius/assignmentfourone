@@ -52,13 +52,12 @@ class ViewController: UIViewController {
     func drawTriangle(count: Int, size: Int, x: Int, y: Int) {
         var y = y
         var numberInLine = count
-        for i in 0..<count {
-
+        for _ in 0..<count {
             for _ in 0..<count {
                 drawSquareInLine(count: numberInLine, size: size, x: x, y: y)
             }
-            var x = x
-            var y = y - (size + 5) * (i + 1)
+            _ = x
+            y = y - (size + 5)
             numberInLine -= 1
         }
 
