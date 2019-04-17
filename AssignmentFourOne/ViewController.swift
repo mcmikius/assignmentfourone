@@ -20,27 +20,13 @@ class ViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         drawSquare()
-        drawLine(number: numberOfCubesPerLine, startX: <#T##Double##Swift.Double#>, StartY: <#T##Double##Swift.Double#>)
     }
 
     func drawSquare() {
-        let square = UIView()
-        square.frame.size.width = 50
-        square.frame.size.height = 50
-        square.backgroundColor = .gray
-        view.addSubview(square)
-    }
-
-    func drawOneSquare() {
-        drawSquare()
-    }
-
-    func drawLine(number: Int, startX: Double, StartY: Double) {
-        for i in 0..<number {
-            drawSquare()
-        }
-
-    }
+        let square = CGRect(x: <#T##Int##Swift.Int#>, y: <#T##Int##Swift.Int#>, width: <#T##Int##Swift.Int#>, height: <#T##Int##Swift.Int#>)
+        let squareFrame = UIView(frame: square)
+        squareFrame.backgroundColor = UIColor.gray
+        view.addSubview(squareFrame)
 
 
 
