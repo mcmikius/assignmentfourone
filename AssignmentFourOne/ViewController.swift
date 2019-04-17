@@ -10,7 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let numberOfCubesPerLine = 3
+    let numberOfCubesPerLine = 5
+    let size = 50
+    let x = 20
+    let y = 20
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,14 +22,26 @@ class ViewController: UIViewController {
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
-        drawSquare()
+        drawSquareInLine(count: numberOfCubesPerLine, size: size, x: x, y: y)
+
     }
 
-    func drawSquare() {
-        let square = CGRect(x: <#T##Int##Swift.Int#>, y: <#T##Int##Swift.Int#>, width: <#T##Int##Swift.Int#>, height: <#T##Int##Swift.Int#>)
+    func drawSquare(size: Int, x: Int, y: Int) {
+        let square = CGRect(x: x, y: y, width: size, height: size)
         let squareFrame = UIView(frame: square)
         squareFrame.backgroundColor = UIColor.gray
         view.addSubview(squareFrame)
+    }
+
+    func drawSquareInLine(count: Int, size: Int, x: Int, y: Int) {
+        var x = x
+        let y = y
+        for _ in 0..<count {
+            drawSquare(size: size, x: x, y: y)
+            x += size + 5
+        }
+
+    }
 
 
 
