@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     let size = 50
     let x = 20
     let y = 20
+    let numberOfCubesPerTriangle = 3
+    let xForTriangle = 20
+    let yForTriangle = 210
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +25,10 @@ class ViewController: UIViewController {
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
+
         drawSquareInLine(count: numberOfCubesPerLine, size: size, x: x, y: y)
+
+        drawTriangle(count: numberOfCubesPerTriangle, size: size, x: xForTriangle, y: yForTriangle)
 
     }
 
@@ -39,6 +45,22 @@ class ViewController: UIViewController {
         for _ in 0..<count {
             drawSquare(size: size, x: x, y: y)
             x += size + 5
+        }
+
+    }
+
+    func drawTriangle(count: Int, size: Int, x: Int, y: Int) {
+        var x = x
+        let baseX = x
+        var y = y
+        var numberInLine = count
+        for i in 0..<count {
+            for _ in 0..<count {
+                drawSquareInLine(count: numberInLine, size: size, x: x, y: y)
+            }
+            x = baseX
+            y = y - (size + 5) * (i + 1)
+            numberInLine -= 1
         }
 
     }
