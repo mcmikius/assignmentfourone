@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let colorOne = UIColor.gray
+    let colorTwo = UIColor.red
     let numberOfCubesPerLine = 5
     let size = 20
     let x = 20
@@ -33,39 +35,41 @@ class ViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
 
-        drawSquareInLine(count: numberOfCubesPerLine, size: size, x: x, y: y)
+        drawSquareInLine(count: numberOfCubesPerLine, size: size, color: colorOne, x: x, y: y)
 
-        drawTriangle(count: numberOfCubesPerTriangle, size: size, x: xForTriangle, y: yForTriangle)
+        drawTriangle(count: numberOfCubesPerTriangle, size: size, color: colorTwo, x: xForTriangle, y: yForTriangle)
 
-        drawPyramide(count: numberOfCubePerPyramide, size: size, x: xForPyramide, y: yForPyramide)
+        drawPyramide(count: numberOfCubePerPyramide, size: size, color: colorOne, x: xForPyramide, y: yForPyramide)
 
-        drawTarget(count: numberTargetCircle, baseSize: baseCircleSize, x: xForTarget, y: yForTarget)
+        drawTarget(count: numberTargetCircle, baseSize: baseCircleSize, colorOne: colorOne, colorTwo: colorTwo, x: xForTarget, y: yForTarget)
 
     }
 
-    func drawSquare(size: Int, x: Int, y: Int) {
+    func drawSquare(size: Int, color: UIColor, x: Int, y: Int) {
         let square = CGRect(x: x, y: y, width: size, height: size)
         let squareFrame = UIView(frame: square)
-        squareFrame.backgroundColor = UIColor.gray
+        squareFrame.backgroundColor = color
         view.addSubview(squareFrame)
     }
 
-    func drawSquareInLine(count: Int, size: Int, x: Int, y: Int) {
+    func drawSquareInLine(count: Int, size: Int, color: UIColor, x: Int, y: Int) {
         var x = x
         let y = y
+        let color = color
         for _ in 0..<count {
-            drawSquare(size: size, x: x, y: y)
+            drawSquare(size: size, color: color, x: x, y: y)
             x += size + 5
         }
 
     }
 
-    func drawTriangle(count: Int, size: Int, x: Int, y: Int) {
+    func drawTriangle(count: Int, size: Int, color: UIColor, x: Int, y: Int) {
+        let color = color
         var y = y
         var numberInLine = count
         for _ in 0..<count {
             for _ in 0..<count {
-                drawSquareInLine(count: numberInLine, size: size, x: x, y: y)
+                drawSquareInLine(count: numberInLine, size: size, color: color, x: x, y: y)
             }
             _ = x
             y = y - (size + 5)
@@ -74,13 +78,14 @@ class ViewController: UIViewController {
 
     }
 
-    func drawPyramide(count: Int, size: Int, x: Int, y: Int) {
+    func drawPyramide(count: Int, size: Int, color: UIColor, x: Int, y: Int) {
+        let color = color
         var y = y
         var x = x
         var numberInLine = count
         for _ in 0..<count {
             for _ in 0..<count {
-                drawSquareInLine(count: numberInLine, size: size, x: x, y: y)
+                drawSquareInLine(count: numberInLine, size: size, color: color, x: x, y: y)
             }
             x += (size + 5) / 2
             y = y - (size + 5)
@@ -88,16 +93,18 @@ class ViewController: UIViewController {
         }
     }
     // TODO: edit this func
-    func drawTarget(count: Int, baseSize: Int, x: Int, y: Int) {
+    func drawTarget(count: Int, baseSize: Int, colorOne: UIColor, colorTwo: UIColor, x: Int, y: Int) {
         var x = x
         var y = y
+        let colorOne = colorOne
+        let colorTwo = colorTwo
         var size = baseSize
         var count = count
         for _ in 0..<count {
-            drawSquareInLine(count: count, size: size, x: x, y: y)
+            drawSquare(size: size, color: count % 2 == 0 ? colorOne : colorTwo, x: x, y: y)
             size = size / 2
             x += size / 2
-            y -= size / 2
+            y += size / 2
             count -= 1
         }
 
