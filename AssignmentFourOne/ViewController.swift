@@ -76,7 +76,7 @@ class ViewController: UIViewController {
             for _ in 0..<count {
                 drawSquareInLine(count: numberInLine, size: size, x: x, y: y)
             }
-            x += (x + 5) / 2
+            x += size / 2
             y = y - (size + 5)
             numberInLine -= 1
         }
