@@ -11,15 +11,19 @@ import UIKit
 class ViewController: UIViewController {
 
     let numberOfCubesPerLine = 5
-    let size = 50
+    let size = 20
     let x = 20
     let y = 20
     let numberOfCubesPerTriangle = 3
     let xForTriangle = 20
-    let yForTriangle = 210
+    let yForTriangle = 110
     let numberOfCubePerPyramide = 4
     let xForPyramide = 20
-    let yForPyramide = 500
+    let yForPyramide = 250
+    let numberTargetCircle = 3
+    let baseCircleSize = 100
+    let xForTarget = 50
+    let yForTarget = 400
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +39,7 @@ class ViewController: UIViewController {
 
         drawPyramide(count: numberOfCubePerPyramide, size: size, x: xForPyramide, y: yForPyramide)
 
-        drawTarget()
+        drawTarget(count: numberTargetCircle, baseSize: baseCircleSize, x: xForTarget, y: yForTarget)
 
     }
 
@@ -83,8 +87,19 @@ class ViewController: UIViewController {
             numberInLine -= 1
         }
     }
-
-    func drawTarget() {
+    // TODO: edit this func
+    func drawTarget(count: Int, baseSize: Int, x: Int, y: Int) {
+        var x = x
+        var y = y
+        var size = baseSize
+        var count = count
+        for _ in 0..<count {
+            drawSquareInLine(count: count, size: size, x: x, y: y)
+            size = size / 2
+            x += size / 2
+            y -= size / 2
+            count -= 1
+        }
 
     }
 

@@ -16,8 +16,8 @@
       <file leaf-file-name="ViewController.swift" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AssignmentFourOne/ViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="78" column="17" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
+            <state relative-caret-position="730">
+              <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
             </state>
           </provider>
         </entry>
@@ -113,7 +113,7 @@
       <option name="presentableId" value="Default" />
       <updated>1555482322059</updated>
       <workItem from="1555482323576" duration="4505000" />
-      <workItem from="1555564652785" duration="757000" />
+      <workItem from="1555564652785" duration="1249000" />
     </task>
     <task id="LOCAL-00001" summary="create drawSquare func">
       <created>1555482874460</created>
@@ -171,15 +171,28 @@
       <option name="project" value="LOCAL" />
       <updated>1555565351366</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary=" change x possition">
+      <created>1555565503517</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1555565503517</updated>
+    </task>
+    <task id="LOCAL-00010" summary="drawTarget">
+      <created>1555566195052</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1555566195052</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5262000" />
+    <option name="totallyTimeSpent" value="5754000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
@@ -188,7 +201,7 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3296593" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3296593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -216,7 +229,9 @@
     <MESSAGE value="experiment" />
     <MESSAGE value="add drawPyramide" />
     <MESSAGE value="edit drawPyramide" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit drawPyramide" />
+    <MESSAGE value=" change x possition" />
+    <MESSAGE value="drawTarget" />
+    <option name="LAST_COMMIT_MESSAGE" value="drawTarget" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/AssignmentFourOne/ViewController.swift">
@@ -228,8 +243,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AssignmentFourOne/ViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="78" column="17" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
+        <state relative-caret-position="730">
+          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
         </state>
       </provider>
     </entry>
