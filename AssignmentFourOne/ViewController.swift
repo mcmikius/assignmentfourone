@@ -35,6 +35,8 @@ class ViewController: UIViewController {
 
         drawPyramide(count: numberOfCubePerPyramide, size: size, x: xForPyramide, y: yForPyramide)
 
+        drawTarget()
+
     }
 
     func drawSquare(size: Int, x: Int, y: Int) {
@@ -80,6 +82,10 @@ class ViewController: UIViewController {
             y = y - (size + 5)
             numberInLine -= 1
         }
+    }
+
+    func drawTarget() {
+
     }
 
 
