@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18094446-1020-461d-b0e2-364408011feb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssignmentFourOne/ViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/AssignmentFourOne/ViewController.swift" afterDir="false" />
-    </list>
+    <list default="true" id="18094446-1020-461d-b0e2-364408011feb" name="Default" comment="" />
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/AssignmentFourOne-fpuiwapgceafamfxmecwktifmimp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +16,8 @@
       <file leaf-file-name="ViewController.swift" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AssignmentFourOne/ViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+            <state relative-caret-position="353">
+              <caret line="78" column="17" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -116,7 +113,7 @@
       <option name="presentableId" value="Default" />
       <updated>1555482322059</updated>
       <workItem from="1555482323576" duration="4505000" />
-      <workItem from="1555564652785" duration="507000" />
+      <workItem from="1555564652785" duration="757000" />
     </task>
     <task id="LOCAL-00001" summary="create drawSquare func">
       <created>1555482874460</created>
@@ -160,11 +157,25 @@
       <option name="project" value="LOCAL" />
       <updated>1555489175645</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add drawPyramide">
+      <created>1555565215455</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1555565215455</updated>
+    </task>
+    <task id="LOCAL-00008" summary="edit drawPyramide">
+      <created>1555565351366</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1555565351366</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5012000" />
+    <option name="totallyTimeSpent" value="5262000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -203,7 +214,9 @@
     <MESSAGE value="edit drawSquare" />
     <MESSAGE value="add drawSquareInLine" />
     <MESSAGE value="experiment" />
-    <option name="LAST_COMMIT_MESSAGE" value="experiment" />
+    <MESSAGE value="add drawPyramide" />
+    <MESSAGE value="edit drawPyramide" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit drawPyramide" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/AssignmentFourOne/ViewController.swift">
@@ -215,8 +228,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AssignmentFourOne/ViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+        <state relative-caret-position="353">
+          <caret line="78" column="17" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
         </state>
       </provider>
     </entry>

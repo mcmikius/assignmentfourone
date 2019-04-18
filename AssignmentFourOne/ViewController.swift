@@ -72,11 +72,11 @@ class ViewController: UIViewController {
         var y = y
         var x = x
         var numberInLine = count
-        for i in 0..<count {
+        for _ in 0..<count {
             for _ in 0..<count {
                 drawSquareInLine(count: numberInLine, size: size, x: x, y: y)
             }
-            x += size / 2
+            x += (size + 5) / 2
             y = y - (size + 5)
             numberInLine -= 1
         }
