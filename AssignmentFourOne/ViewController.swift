@@ -45,10 +45,12 @@ class ViewController: UIViewController {
 
     }
 
-    func drawSquare(size: Int, color: UIColor, x: Int, y: Int) {
+    func drawSquare(size: Int, color: UIColor, x: Int, y: Int, cornerRadius: Int) {
         let square = CGRect(x: x, y: y, width: size, height: size)
         let squareFrame = UIView(frame: square)
         squareFrame.backgroundColor = color
+        squareFrame.layer.cornerRadius = CGFloat(cornerRadius)
+        squareFrame.layer.masksToBounds = true
         view.addSubview(squareFrame)
     }
 
@@ -56,8 +58,9 @@ class ViewController: UIViewController {
         var x = x
         let y = y
         let color = color
+        let cornerRadius = 0
         for _ in 0..<count {
-            drawSquare(size: size, color: color, x: x, y: y)
+            drawSquare(size: size, color: color, x: x, y: y, cornerRadius: cornerRadius)
             x += size + 5
         }
 
@@ -92,7 +95,6 @@ class ViewController: UIViewController {
             numberInLine -= 1
         }
     }
-    // TODO: edit this func
     func drawTarget(count: Int, baseSize: Int, colorOne: UIColor, colorTwo: UIColor, x: Int, y: Int) {
         var x = x
         var y = y
@@ -100,8 +102,10 @@ class ViewController: UIViewController {
         let colorTwo = colorTwo
         var size = baseSize
         var count = count
+        var cornerRadius = 0
         for _ in 0..<count {
-            drawSquare(size: size, color: count % 2 == 0 ? colorOne : colorTwo, x: x, y: y)
+            cornerRadius = size / 2
+            drawSquare(size: size, color: count % 2 == 0 ? colorOne : colorTwo, x: x, y: y, cornerRadius: cornerRadius)
             size = size / 2
             x += size / 2
             y += size / 2
