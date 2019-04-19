@@ -53,7 +53,7 @@ class ViewController: UIViewController {
         squareFrame.layer.masksToBounds = true
         view.addSubview(squareFrame)
     }
-
+//1. Строку из указаного количества кубиков
     func drawSquareInLine(count: Int, size: Int, color: UIColor, x: Int, y: Int) {
         var x = x
         let y = y
@@ -65,7 +65,7 @@ class ViewController: UIViewController {
         }
 
     }
-
+//2. Лесенку с указанным количеством кубиков в основе
     func drawTriangle(count: Int, size: Int, color: UIColor, x: Int, y: Int) {
         let color = color
         var y = y
@@ -80,7 +80,7 @@ class ViewController: UIViewController {
         }
 
     }
-
+//3. Пирамиду с указанным количеством кубиков в основе
     func drawPyramide(count: Int, size: Int, color: UIColor, x: Int, y: Int) {
         let color = color
         var y = y
@@ -95,6 +95,7 @@ class ViewController: UIViewController {
             numberInLine -= 1
         }
     }
+//    1. Цель - квадратную. Найти в интернете как скруглить UIView, сделать цель круглой
     func drawTarget(count: Int, baseSize: Int, colorOne: UIColor, colorTwo: UIColor, x: Int, y: Int) {
         var x = x
         var y = y
